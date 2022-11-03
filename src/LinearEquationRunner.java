@@ -28,10 +28,5 @@ public class LinearEquationRunner {
 
         LinearEquation line = new LinearEquation(firstXAsInt, firstYAsInt, secondXAsInt, secondYAsInt);
         System.out.println(line.slope());
-
-        System.out.println(firstXAsInt);
-        System.out.println(firstYAsInt);
-        System.out.println(secondXAsInt);
-        System.out.println(secondYAsInt);
     }
 }
