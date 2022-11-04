@@ -22,11 +22,15 @@ public class LinearEquationRunner {
         int secondYAsInt = Integer.parseInt(y2);
 
         if (firstXAsInt == secondXAsInt) {
-            System.out.println("You have entered coordinates that result in a negative line");
+            System.out.println("You have entered coordinates that result in a vertical line");
             System.out.println("The equation is x = " + firstXAsInt);
         }
 
         LinearEquation line = new LinearEquation(firstXAsInt, firstYAsInt, secondXAsInt, secondYAsInt);
-        System.out.println(line.slope());
+        System.out.println("");
+        System.out.println(line.lineInfo() + "\n");
+        System.out.println("Enter a value for x: ");
+        double xValue = scan.nextDouble();
+        System.out.println("The point on this line is " + line.coordinateForX(xValue));
     }
 }
